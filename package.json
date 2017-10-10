@@ -2,16 +2,19 @@
   "name": "loading-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nel-co.github.io/react-preloading-component-demo",  
+  "homepage": "https://nel-co.github.io/react-preloading-component-demo",
   "devDependencies": {
-    "react-preloading-component": "^0.0.1",
+    "react-preloading-component": "^0.0.2",
     "react-scripts": "1.0.14"
   },
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
